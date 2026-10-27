@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0143a2">
+  <meta name="description" content="Иван Иванов — агент по недвижимости SRG. Продажа, покупка, аренда, новостройки и сопровождение ипотечной сделки.">
+  <title>Иван Иванов — ваш агент по недвижимости | SRG</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo-dark.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="agent-config.js" defer></script>
+  <script src="card.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="m13 3-3 3 4 4H3v4h11l-4 4 3 3 9-9z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="m6.6 10.8 2.9-2.3L6.8 2H2.4C.1 12.2 11.8 23.9 22 21.6v-4.4l-6.5-2.7-2.3 2.9a17.4 17.4 0 0 1-6.6-6.6z"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M3 2h18a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H9l-7 4V4a2 2 0 0 1 1-2z"/></symbol>
+    <symbol id="i-save" viewBox="0 0 24 24"><path d="M3 2h15l4 4v16H2V2zm3 2v6h12V4zm0 10v6h12v-6zM14 4h3v4h-3z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><path d="M8 1h14v17h-3V4H8zM2 6h14v17H2zm3 3v11h8V9z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m5 2 7 7 7-7 3 3-7 7 7 7-3 3-7-7-7 7-3-3 7-7-7-7z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M2 4h20v3H2zm0 7h20v3H2zm0 7h20v3H2z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 1 3.4 6.9 7.6 1.1-5.5 5.4 1.3 7.6-6.8-3.6L5.2 22l1.3-7.6L1 9l7.6-1.1z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 1a8 8 0 0 0-8 8c0 6 8 14 8 14s8-8 8-14a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="SRG Недвижимость — в начало"><img src="assets/images/logo-dark.svg" width="220" height="67" alt="SRG Недвижимость"></a>
+      <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
+        <a href="#about">Обо мне</a><a href="#specialization">Чем помогу</a><a href="#cases">Кейсы</a><a href="#reviews">Отзывы</a>
+      </nav>
+      <button class="button button-small header-contact" type="button" data-contact>Связаться<svg class="icon"><use href="#i-arrow"/></svg></button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Открыть меню"><svg class="icon"><use href="#i-menu"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="wrap hero" id="top" aria-labelledby="agent-name">
+      <div class="hero-content">
+        <p class="eyebrow eyebrow-light">SRG Недвижимость / Личный агент</p>
+        <h1 id="agent-name" data-agent-name>Иван Иванов</h1>
+        <p class="hero-role" data-agent-role>Агент по недвижимости SRG</p>
+        <p class="hero-location"><svg class="icon"><use href="#i-pin"/></svg><span data-agent-city>Москва и Московская область</span></p>
+        <div class="service-tags" aria-label="Услуги"><span>Продажа</span><span>Покупка</span><span>Аренда</span><span>Ипотека</span></div>
+        <p class="hero-intro" data-agent-intro>Помогаю покупать и продавать недвижимость спокойно: с понятным планом, вниманием к документам и вашим интересам.</p>
+        <ul class="hero-benefits">
+          <li><img src="assets/images/secure-white.png" alt="">Внимание к юридической чистоте сделки</li>
+          <li><img src="assets/images/buy-white.png" alt="">Подбор под ваш запрос и бюджет</li>
+          <li><img src="assets/images/handshake-white.png" alt="">Переговоры и сопровождение до ключей</li>
+        </ul>
+        <div class="hero-actions">
+          <button class="button button-white" type="button" data-contact><svg class="icon"><use href="#i-message"/></svg>Написать мне<svg class="icon action-arrow"><use href="#i-arrow"/></svg></button>
+          <a class="button button-glass" href="tel:+70000000000" data-call><svg class="icon"><use href="#i-phone"/></svg>Позвонить</a>
+        </div>
+        <div class="hero-socials"><span>Или в удобном мессенджере:</span><a href="https://max.ru/" data-social="max" target="_blank" rel="noopener noreferrer">MAX</a><a href="https://t.me/" data-social="telegram" target="_blank" rel="noopener noreferrer">Telegram</a><a href="https://vk.com/" data-social="vk" target="_blank" rel="noopener noreferrer">VK</a></div>
+      </div>
+      <div class="portrait-area">
+        <div class="portrait-frame">
+          <img class="agent-portrait" src="assets/images/ivan-ivanov.webp" width="1000" height="1250" alt="Иван Иванов, агент по недвижимости" data-agent-portrait fetchpriority="high">
+          <button class="portrait-save" type="button" data-save-contact aria-label="Сохранить контакт агента"><svg class="icon"><use href="#i-save"/></svg></button>
+          <div class="portrait-caption"><span class="caption-mark"></span><div><strong>Ваш агент на каждом этапе</strong><span>От первого разговора до передачи ключей</span></div></div>
+        </div>
+        <button class="save-link" type="button" data-save-contact><svg class="icon"><use href="#i-save"/></svg>Сохранить контакт в телефон</button>
+      </div>
+    </section>
+
+    <section class="wrap about section" id="about" aria-labelledby="about-title">
+      <div class="section-heading"><p class="eyebrow">01 / Знакомство</p><h2 id="about-title">Один агент.<br>Ваши интересы — на каждом этапе.</h2></div>
+      <div class="about-copy"><p data-agent-about></p><div class="facts" id="agent-facts"></div></div>
+    </section>
+
+    <section class="section section-tint" id="specialization" aria-labelledby="specialization-title">
+      <div class="wrap"><div class="section-heading heading-row"><div><p class="eyebrow">02 / Специализация</p><h2 id="specialization-title">С какой задачей<br>могу помочь</h2></div><p class="section-lead">Сначала разберёмся в вашей ситуации.<br>Затем выберем подходящий путь к сделке.</p></div><div class="specialty-grid" id="specialty-grid"></div></div>
+    </section>
+
+    <section class="wrap section" id="cases" aria-labelledby="cases-title">
+      <div class="section-heading heading-row"><div><p class="eyebrow">03 / Примеры работы</p><h2 id="cases-title">За каждой сделкой —<br>чья-то новая история</h2></div><p class="section-lead">Запрос, план действий и результат.<br>Несколько примеров моего подхода.</p></div>
+      <div class="case-grid" id="case-grid"></div>
+    </section>
+
+    <section class="section section-tint" id="reviews" aria-labelledby="reviews-title">
+      <div class="wrap"><div class="section-heading heading-row"><div><p class="eyebrow">04 / Отзывы</p><h2 id="reviews-title">Когда всё понятно,<br>решаться легче</h2></div><div class="review-navigation"><span id="review-counter" aria-live="polite">1 / 3</span><button type="button" data-review-prev aria-label="Предыдущий отзыв"><svg class="icon reverse"><use href="#i-arrow"/></svg></button><button type="button" data-review-next aria-label="Следующий отзыв"><svg class="icon"><use href="#i-arrow"/></svg></button></div></div><div class="review-track" id="review-track" role="region" aria-label="Отзывы клиентов" tabindex="0"></div></div>
+    </section>
+
+    <section class="wrap section contact-section" id="contacts" aria-labelledby="contact-title">
+      <div class="contact-copy"><p class="eyebrow eyebrow-light">05 / Давайте знакомиться</p><h2 id="contact-title">Начнём с вашей<br>задачи?</h2><p>Продать, купить, арендовать или просто разобраться в вариантах — расскажите, что для вас важно.</p><div class="contact-signature"><strong data-agent-name>Иван Иванов</strong><span data-agent-role>Агент по недвижимости SRG</span></div></div>
+      <div class="contact-card"><span class="micro-label">Лично на связи</span><a class="phone-link" href="tel:+70000000000" data-call data-agent-phone>+7 (000) 000-00-00</a><button class="button" type="button" data-contact>Написать в мессенджер<svg class="icon"><use href="#i-message"/></svg></button><div class="contact-socials"><a href="https://max.ru/" data-social="max" target="_blank" rel="noopener noreferrer">MAX<svg class="icon"><use href="#i-arrow"/></svg></a><a href="https://t.me/" data-social="telegram" target="_blank" rel="noopener noreferrer">Telegram<svg class="icon"><use href="#i-arrow"/></svg></a><a href="https://vk.com/" data-social="vk" target="_blank" rel="noopener noreferrer">VK<svg class="icon"><use href="#i-arrow"/></svg></a></div><button class="button button-outline" type="button" data-save-contact><svg class="icon"><use href="#i-save"/></svg>Сохранить контакт</button></div>
+    </section>
+  </main>
+
+  <footer class="wrap footer"><div class="footer-top"><a class="brand footer-brand" href="#top" aria-label="SRG — в начало"><img src="assets/images/logo-dark.svg" width="190" height="58" alt="SRG Недвижимость"></a><span data-agent-city>Москва и Московская область</span><a href="#contacts">Контакты агента</a></div><div class="footer-bottom"><span>© SRG Недвижимость</span><p>Демонстрационный профиль агента. Фото сгенерировано; показатели, кейсы, отзывы и контакты приведены как примеры для шаблона.</p></div></footer>
+
+  <div class="mobile-action-bar" aria-label="Быстрая связь"><a class="button button-outline" href="tel:+70000000000" data-call><svg class="icon"><use href="#i-phone"/></svg>Позвонить</a><button class="button" type="button" data-contact><svg class="icon"><use href="#i-message"/></svg>Написать</button></div>
+
+  <dialog class="contact-dialog" id="contact-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow">Личная связь</span><button class="icon-button" type="button" data-close-dialog aria-label="Закрыть контакты"><svg class="icon"><use href="#i-close"/></svg></button></div><h2 id="dialog-title">Как вам удобнее?</h2><p class="dialog-copy" id="contact-context">Расскажите о своей задаче — начнём с разговора.</p><div class="dialog-phone"><a href="tel:+70000000000" data-call data-agent-phone>+7 (000) 000-00-00</a><button class="icon-button" type="button" data-copy-phone aria-label="Скопировать номер телефона"><svg class="icon"><use href="#i-copy"/></svg></button></div><div class="messenger-list"><a href="https://max.ru/" data-social="max" target="_blank" rel="noopener noreferrer"><span class="messenger-wordmark">MAX</span><span><strong>Написать в MAX</strong><small>Обсудим детали в сообщениях</small></span><svg class="icon"><use href="#i-arrow"/></svg></a><a href="https://t.me/" data-social="telegram" target="_blank" rel="noopener noreferrer"><span class="messenger-wordmark">TG</span><span><strong>Написать в Telegram</strong><small>Отправьте вопрос или ссылку на объект</small></span><svg class="icon"><use href="#i-arrow"/></svg></a><a href="https://vk.com/" data-social="vk" target="_blank" rel="noopener noreferrer"><span class="messenger-wordmark">VK</span><span><strong>Написать во ВКонтакте</strong><small>Выберите привычный способ общения</small></span><svg class="icon"><use href="#i-arrow"/></svg></a></div><p class="demo-contact-note" data-demo-note>В шаблоне показаны демонстрационные контакты.</p></dialog>
+
+  <dialog class="case-dialog" id="case-dialog" aria-labelledby="case-dialog-title"><div class="dialog-top"><span class="eyebrow">История сделки</span><button class="icon-button" type="button" data-close-dialog aria-label="Закрыть кейс"><svg class="icon"><use href="#i-close"/></svg></button></div><div id="case-dialog-content"></div><button class="button case-contact-button" type="button" id="case-contact">Обсудить похожую задачу<svg class="icon"><use href="#i-message"/></svg></button></dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><p class="wrap notice">Для интерактивных возможностей визитки включите JavaScript в браузере.</p></noscript>
+</body>
+</html>
